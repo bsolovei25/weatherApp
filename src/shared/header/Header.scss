@@ -1,0 +1,47 @@
+.headerBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  background-color: #59516e;
+  &__image {
+    flex: 3;
+    height: 85px;
+    display: inline-block;
+    &__picture {
+      height: inherit;
+    }
+  }
+  &__select {
+    flex: 3;
+    position: relative;
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 147px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    &__input {
+      display: flex;
+      align-items: center;
+      background-color: hsla(0,0%,100%,.2);
+      border-radius: 10px;
+      padding: 5px 6px;
+    }
+    .input-box {
+      color: #ffffff;
+      background-color: hsla(0,0%,100%,.2);
+      border-radius: 10px;
+    }
+    .input-box:focus {
+      border: 1px solid #ffffff;
+    }
+    .input-text {
+      color: #ffffff;
+      border: 1px solid hsla(0,0%,100%,.2);
+      border-radius: 10px;
+    }
+  }
+}

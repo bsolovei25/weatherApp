@@ -1,0 +1,42 @@
+.history-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  .single-city {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: .875rem;
+    color: #ffffff;
+    cursor: pointer;
+    &__block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 200px;
+      cursor: pointer;
+      margin-right: 20px;
+      border-radius: 10px;
+      background-color: hsla(0,0%,100%,.2);
+      &__name {
+        max-width: 150px;
+      }
+    }
+  }
+  &__reverse {
+    display: flex;
+    flex-direction: row;
+    font-size: .875rem;
+    max-height: 40px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #413050;
+    border-radius: 10px;
+    min-width: 150px;
+  }
+}
